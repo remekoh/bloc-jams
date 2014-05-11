@@ -9,6 +9,16 @@
 @import "album_collection";
 @import "user_profile";
 
+$primary-color: #369;
+$margin: 10px;
+@mixin round($radius){
+  border-radius: $radius;
+}
+%bar{
+  height: 14px;
+  font-size: 10px;
+}
+
 body, html {
   // Allows us to set the min-height for child elements.
   height: 100%;
@@ -19,4 +29,15 @@ body, html {
   border-radius: 0;
   margin-bottom: 0;
 }
-
+div{
+  @include round(4px * 2);
+}
+a {
+  color: $primary-color;
+}
+img{
+  margin: $margin + 5;
+}
+.nav {
+    @extend %bar;
+}

@@ -1,0 +1,38 @@
+.player-body-container {
+  min-height: 100%;
+  padding-bottom: 100px;
+  color: white;
+  background: -webkit-radial-gradient( #2b1339, #380c77);
+  background: radial-gradient(   #2b1339, #380c77); }
+  .player-body-container a {
+    color: white; }
+
+.default-player-header, .default-player-footer {
+  background-color: rgba(123, 70, 163, 0.9); }
+
+.default-player-header {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800; }
+
+.default-player-footer {
+  height: 100px; }
+
+.nav {
+  height: 14px;
+  font-size: 10px; }
+
+body, html {
+  height: 100%; }
+
+.navbar {
+  border-radius: 0;
+  margin-bottom: 0; }
+
+div {
+  border-radius: 8px; }
+
+a {
+  color: #336699; }
+
+img {
+  margin: 15px; }

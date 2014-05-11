@@ -1,3 +1,8 @@
+html
+  head
+    title= title
+    link(rel='stylesheet', href='app/styles/app.css')
+  body 
 //- Hi! This is an example Jade file.
 
 //- The '//-' at the start of these lines are comments that wont appear in the
@@ -31,15 +36,31 @@ block body
   div(class="grey-background orange-text")
     | A second div with the CSS classes 'grey-background' and 'orange-text' applied to it.
 
-  a(href="http://google.com", class="orange-text") This is a link to google.
+    a(href="http://google.com", class="orange-text") This is a link to google.
 
   //- This is an image with the source of an image being Google's logo.
+  
   img(src="http://www.google.com/images/srpr/logo11w.png")
 
   a(href="http://google.com", class="orange-text") This is a link to google.
 
 
   //- Step 3 code goes below. Watch your indentation! Each additional level should be indented by 2 spaces.
+  
+  a(href="http://google.com")
+    img(src="http://www.google.com/images/srpr/logo11w.png")
 
+  //- Example Jade
+  .grey-background
+    .orange-text
+        p.blue-links
+          | A parent div with the CSS class 'grey-background' and 'orange-text' applied to it,
+          and a 
+            a(href="http://google.com") blue link
 
+    a(href="http://google.com")
+      | A link to Google
+
+  //- A element with two attributes. Note the comma that separates attributes.
+  img(src="http://www.google.com/images/srpr/logo11w.png", width="50px")
 
