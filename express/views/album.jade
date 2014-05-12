@@ -1,3 +1,31 @@
 extends layouts/player_layout
 
 block content
+  .container.album-container
+    .row.album-header-container
+      .col-md-3
+        img(src="/images/album-placeholder.png")
+      .col-md-9.col-md-push-1
+        .album-header-information
+          h3.album-title The Colors
+          h4.album-artist Pablo Picasso
+          h5.album-meta-info 1881 on Cubism
+    .row
+      .col-md-12
+        table.table.album-song-listing
+          //- This loop runs on the server, not in the browser (we'll generate the table using jQuery and Angular in the future)
+               * The brackets '[' and ']' creates a JavaScript array-- covered later in the course.
+               * The variables "colorName" and "index" are javascript variables.
+          each colorName, index in ['Blue', 'Green', 'Red', 'Pink', 'Magenta', 'Purple', 'Turquoise']
+            //- This is a loop body
+            tr
+              td
+                //- 'index' tells us which position we are in the array, this will go from 0 to 6.
+                      * You can add a variable to the html document through interpolation "#{...}"
+                | #{index + 1}
+              td
+                //- colorName is assigned the value of each element list of colors in turn: 
+                      e.g. first 'Blue', then 'Green', then 'Red', and so on.
+                | #{colorName}
+              td
+                | X:XX
